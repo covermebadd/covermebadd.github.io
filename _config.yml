@@ -1,25 +1,27 @@
 # --- Basic options --- #
 
 # Name of website
-title: Matarese Landscape Construction
+title: Cover Me Badd
 
 # Short description of your site
-description: Professional Landscaping Services Since 1990
+description: You bring the people. We bring the party.
 
 # Your name to show in the footer
-author: Matarese Landscape Construction
+author: Cover Me Badd
 
 # --- List of links in the navigation bar --- #
 
-navbar-links:
-  About: "#about"
-  Get A Quote: "#getaquote"
+navbar-links:  
+  Reviews: "#reviews"
+  Shows: "#shows"
+  Booking: "#booking"
+  Videos: "#videos"
 
 # --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/backhoe.gif"
+avatar: "/assets/img/cmb_logo_new_transparent.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour here.
 round-avatar: false
@@ -35,8 +37,9 @@ round-avatar: false
 # Uncomment the links you want to show and add your information to each one.
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
-  email: "matareselandscaping@gmail.com"
-#  facebook: deanattali
+  email: "cover-me-badd@googlegroups.com"
+  facebook: CoverMeBaddBoston
+  instagram: covermebaddboston
 #  github: daattali
 #  twitter: daattali
 #  rss: true
@@ -45,7 +48,6 @@ social-network-links:
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-#  instagram: deanat78
 #  youtube: user/deanat78
 #  spotify: yourname
 #  telephone: +14159998888
@@ -92,7 +94,7 @@ footer-link-col: "#404040"
 
 #navbar-img: "/assets/img/bgimage.png"
 #footer-img: "/assets/img/bgimage.png"
-page-img: "/assets/img/mlc_background.jpg"
+page-img: "assets/img/background.jpg"
 
 # --- Web Statistics Section --- #
 
