@@ -1,0 +1,52 @@
+# --- Show List
+#
+# Params:
+#   venue: the name of the venue
+#   location: the city/state
+#   date: the date of the show
+#   link: a link to the show event or venue site (optional)
+#
+# Note: we need to delete shows from the list manually once they pass
+#
+# --- Examples (use these as templates):
+#
+# - venue: "Wedding without link"
+#   location: "Boston, MA"
+#   date: "June 1, 2020"
+#
+# - venue: "Ned Devine's"
+#   location: "Boston, MA"
+#   date: "June 6, 2020"
+#   link: "https://neddevinesboston.com/"
+#
+# - venue: "Hurricane's"
+#   location: "Boston, MA"
+#   date: "March 7, 2020"
+#   link: "https://www.facebook.com/events/212755563234747"
+#
+# - venue: "The Harp"
+#   location: "Boston, MA"
+#   date: "August 29, 2020"
+#   link: "https://harpboston.com/"
+
+- venue: "Ned Devine's"
+  location: "Boston, MA"
+  date: "June 6, 2020"
+  link: "https://neddevinesboston.com/"
+
+- venue: "Wedding"
+  location: "Boston, MA"
+  date: "June 26, 2020"
+
+- venue: "Private Party"
+  location: "Cape Cod, MA"
+  date: "July 18, 2020"
+
+- venue: "Wedding"
+  location: "Boston, MA"
+  date: "August 8, 2020"
+
+- venue: "The Harp"
+  location: "Boston, MA"
+  date: "August 29, 2020"
+  link: "https://harpboston.com/"

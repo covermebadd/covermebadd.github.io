@@ -3,9 +3,6 @@
   {%- if site.title-img -%}
     <a class="navbar-brand navbar-brand-logo" href="{{ '' | absolute_url }}"><img alt="{{ site.title }} Logo" src="{{ site.title-img }}"/></a>
   {%- elsif site.title -%}
-    <!-- <a class="navbar-brand" href="{{ '' | absolute_url }}">{{ site.title }}</a> -->
-
-    <!-- <a class="navbar-brand" href="mailto:cover-me-badd@googlegroups.com">Contact Us</a> -->
     <div>
     <a href="mailto:{{ site.social-network-links.email }}" title="Email us">
       <span class="fa-stack fa-lg" aria-hidden="true" style="color: #404040; width:2em">
@@ -49,8 +46,8 @@
             </div>
           </li>
         {% else %}
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: 0.9rem;" href="{{ link[1] | relative_url }}">{{ link[0] }}</a>
+          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+            <a class="nav-link" href="{{ link[1] | relative_url }}" style="font-size: 0.9rem;">{{ link[0] }}</a>
           </li>
         {%- endif -%}
       {%- endfor -%}
@@ -58,7 +55,7 @@
   </div>
 
   {% if page.image and (layout.show-avatar or page.show-avatar) %}
-    <div class="avatar-container mt-5 mt-sm-4" style="width: 7rem;">
+    <div class="avatar-container mt-4 mt-sm-5">
       <div class="avatar-img-border">
         <a href="{{ '' | absolute_url }}">
           <img alt="Navbar avatar" class="avatar-img" src="{{ page.image | relative_url }}" />
@@ -66,7 +63,7 @@
       </div>
     </div>
   {% elsif site.avatar and (layout.show-avatar or page.show-avatar) %}
-    <div class="avatar-container mt-5 mt-sm-4" style="width: 7rem;">
+    <div class="avatar-container mt-4 mt-sm-4">
       <div class="avatar-img-border">
         <a href="{{ '' | absolute_url }}">
           <img alt="Navbar avatar" class="avatar-img" src="{{ site.avatar | relative_url }}" />

@@ -52,16 +52,16 @@ layout: base
     <!--     </div> -->
     <!--   </div> -->
     <!-- </div> -->
-
   </div>
-
 </div>
 
 <div class="container-md">
-  <a name="reviews"></a>
-  <div class="row">
-    <div class="intro-header col-sm" style="margin:2.5rem 0 1rem;">
+  <div class="row mt-4 mt-sm-0">
+    <div class="intro-header col-sm" style="margin:1rem 0 1rem;">
       <div class="page-heading">
+        <p style="position:relative; margin:0">
+          <a name="reviews" style="position:absolute; top:-100px;"></a>
+        </p>
         <h1>Reviews</h1>
         <hr class="small">
 
@@ -77,7 +77,7 @@ layout: base
              <p class="font-italic mb-0">"CMB was phenomenal at our reception! They were professional, accommodating and thorough in the months leading up to our wedding day, and put together an incredible playlist for our guests, with an awesome mix of oldies, classics from 80's and 90's, and newer hits - something for everyone. Above all, they're just FUN...I had family members send their kids home with relatives just so they could stay and dance."</p>
              <p>-John G</p>
            </blockquote>
-          </div>
+         </div>
 
          <div>
            <span class="intro-header page-heading page-subheading mt-0 mb-3">We're proud to be a 5-star reviewed band!</span>
@@ -96,7 +96,7 @@ layout: base
                </div>
              </div>
            <div class="col-md-2"></div>
-         </div>
+        </div>
 
         </div>
       </div>
@@ -105,64 +105,53 @@ layout: base
 </div>
 
 <div class="container-md">
-  <a name="shows"></a>
-  <div class="row">
-    <div class="intro-header col-sm" style="margin:1.5rem 0 1.25rem;">
+  <div class="row mt-4 mt-sm-0">
+    <div class="intro-header col-sm" style="margin:1rem 0 1rem;">
       <div class="page-heading">
+        <p style="position:relative; margin:0">
+          <a name="shows" style="position:absolute; top:-100px;"></a>
+        </p>
         <h1>Shows</h1>
         <hr class="small">
-        <span class="mt-5" style="font-size:1.35rem">Note: all shows have been postponed due to COVID-19. Look for updates on social media!</span>
+        <span class="mt-5" style="font-size:1.35rem"><em>Note: all shows have been postponed due to COVID-19. Look for updates on social media!</em></span>
       </div>
     </div>
   </div>
 
   <div class="row">
-    <div class="offset-sm-2 col-sm-8">
-      <!-- Can we make this feed from another file or set of files? -->
+    <div class="offset-sm-1 col-sm-10">
       <div class="list-group">
+      {%- for show in site.data.shows -%}
+        {%- if show.link %}
+        <a target="_blank" href="{{ show.link }}" style="color:white" class="list-group-item flex-column align-items-center">
+        {% else %}
         <a class="list-group-item list-group-item-action flex-column align-items-center">
-          <div class="d-flex w-100 justify-content-between">
-            <span class="mb-1">Ned Devine's - Boston, MA</span>
-            <span>June 6, 2020</span>
-         </div>
-        </a>
-        <a class="list-group-item list-group-item-action flex-column align-items-center">
-          <div class="d-flex w-100 justify-content-between">
-            <span class="mb-1">Wedding - Boston, MA</span>
-            <span>June 26, 2020</span>
+        {%- endif -%}
+          <div class="row">
+            <div class="col-6 col-md-4">
+              <span class="mb-1">{{ show.venue }}</span>
+            </div>
+            <div class="col-4 d-none d-md-block" style="text-align:center">
+              <span>{{ show.location }}</span>
+            </div>
+            <div class="col-6 col-md-4" style="text-align:right">
+              <span>{{ show.date }}</span>
+            </div>
           </div>
         </a>
-        <a class="list-group-item list-group-item-action flex-column align-items-center">
-          <div class="d-flex w-100 justify-content-between">
-            <span class="mb-1">Private Party - Cape Cod, MA</span>
-            <span>July 18, 2020</span>
-          </div>
-          <p class="mb-1 mt-1"></p>
-        </a>
-        <a class="list-group-item list-group-item-action flex-column align-items-center">
-          <div class="d-flex w-100 justify-content-between">
-            <span class="mb-1">Wedding - Boston, MA</span>
-            <span>August 8, 2020</span>
-          </div>
-          <p class="mb-1 mt-1"></p>
-        </a>
-        <a class="list-group-item list-group-item-action flex-column align-items-center">
-          <div class="d-flex w-100 justify-content-between">
-            <span class="mb-1">The Harp - Boston, MA</span>
-            <span>August 29, 2020</span>
-         </div>
-        </a>
+      {%- endfor -%}
       </div>  
     </div>
   </div>
 </div>
 
-
 <div class="container-md">
-  <a name="booking"></a>
-  <div class="row">
-    <div class="intro-header col-sm" style="margin:3rem 0 1.25rem;">
+  <div class="row mt-4">
+    <div class="intro-header col-sm" style="margin:1rem 0 1rem;">
       <div class="page-heading">
+        <p style="position:relative; margin:0">
+          <a name="booking" style="position:absolute; top:-100px;"></a>
+        </p>
         <h1>Booking</h1>
         <hr class="small">
 
@@ -229,10 +218,12 @@ layout: base
 </div>
 
 <div class="container-md">
-  <a name="videos"></a>
-  <div class="row">
-    <div class="intro-header col-sm" style="margin:1rem 0 1.25rem;">
+  <div class="row mt-5 mt-sm-0">
+    <div class="intro-header col-sm" style="margin:1rem 0 1rem;">
       <div class="page-heading">
+        <p style="position:relative; margin:0">
+          <a name="videos" style="position:absolute; top:-100px;"></a>
+        </p>
         <h1>Videos</h1>
         <hr class="small">
             <div>
